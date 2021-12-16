@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+Docs/
+semantic/
+package-lock.json
+Examples_prof
+Exercices_prof
