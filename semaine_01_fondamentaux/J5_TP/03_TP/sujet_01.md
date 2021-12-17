@@ -1,8 +1,14 @@
 # Sujet 01
 
-Sur la base des socket.io, essayez de construire le jeu Chiffoumi. 
+Sur la base des socket.io, essayez de construire le jeu Chiffoumi.
 
-Si vous avez terminé avant l'heure, créez un compteur qui limite le jeu ou faites une sauvegarde des parties en limitant celles-ci à 10 tours.
+## Partie 1
+
+Le jeu consiste à proposer un choix entre : pierre, feuille ou ciseau. Votre algorithme sur le serveur choisit aléatoirement un des trois choix possibles. Vous vérifiez qui a gagné, et vous re-envoyez (emit) le résultat de ce tour.
+
+## Partie 2
+
+Dans la partie optionnelle, vous pouvez faire jouer l'utilisateur contre le script avec un nombre de tours fixés à l'avance, par exemple 10. Lorsque ces 10 tours sont terminés on compte les points, on termine la partie en affichant les résultats et on donne la possibilité de re-jouer.
 
 ## Contraintes 
 
