@@ -2,7 +2,7 @@
 
 Sur la base des socket.io, essayez de construire le jeu Chiffoumi. 
 
-Si vous avez terminé avant l'heure, créez un compteur qui limite le jeu ou faites une sauvegarde des parties en limitant celles-ci à 10 tours.
+Si vous avez terminé avant l'heure, créez un compteur qui limite le jeu ou faites une sauvegarde des parties en limitant celles-ci à 10 tours. Et au bout de ces tours on notifiera (sauvegarde) les scores des participants.
 
 ## Contraintes 
 
