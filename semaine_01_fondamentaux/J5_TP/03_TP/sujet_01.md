@@ -6,23 +6,23 @@ Si vous avez terminé avant l'heure, créez un compteur qui limite le jeu ou fai
 
 ## Contraintes 
 
-Utilisez la base de l'exemple que nous avons vu en cours.
+Utilisez la base de l'exemple sur les socket.io que nous avons vu en cours pour réaliser ce projet.
 
-## Remarques
+## Remarques techniques importantes
 
-- Vous avez la possibilité d'utilisez un identifiant pour le client :
+- Vous avez la possibilité d'utilisez un identifiant pour déterminer chaque client à partir de l'objet socket :
 
 ```js
 socket.id
 ```
 
-- Dans notre exemple vous pouvez faire un console.log pour voir que cet identidiant est unique par instance de votre client (onglet de navigateur).
+- Dans notre exemple du cours, vous pouvez faire un console.log pour voir que cet identidiant est unique par instance de votre client (onglet de navigateur).
 
 ```js
 io.on('connection', (socket) => {
     // est ce que le client envoie quelque chose ? Si oui on récupère le message
     socket.on('chat message', (msg) => {
-        console.log('message: ' + msg + socket.id);
+        console.log('message: ' + msg + socket.id); // socket.id unique par client
         // re-envoyer un message à tout le monde, même à celui qui l'a envoyé
         io.emit('chat message', msg);
         // envoyer un message sauf à celui qui a déclenché l'événement
